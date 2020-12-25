@@ -21,7 +21,7 @@ function scriptName() {
 }
 async function main() {
     if(!cookie){
-        fs.writeFileSync("./result.txt", "需要填写cookie")
+        fs.writeFileSync("./result", "需要填写cookie")
         return
     }
     await downloadScript()
