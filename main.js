@@ -28,7 +28,7 @@ async function main() {
 
     await modifyCookieInScript()
 
-    exec.execSync(`node ./${scriptName()} >> result.txt`)
+    exec.execSync(`node ./${scriptName()} >> result`)
 }
 
 main()
