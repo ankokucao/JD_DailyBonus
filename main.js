@@ -21,14 +21,14 @@ function scriptName() {
 }
 async function main() {
     if(!cookie){
-        fs.writeFileSync("./result", "需要填写cookie")
+        fs.writeFileSync("./result.txt", "需要填写cookie")
         return
     }
     await downloadScript()
 
     await modifyCookieInScript()
 
-    exec.execSync(`node ./${scriptName()} >> result`)
+    exec.execSync(`node ./${scriptName()} >> result.txt`)
 }
 
 main()
